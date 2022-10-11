@@ -23,19 +23,6 @@ function processMenu() {
     })
   }
   chainMenus.push({ header: 'LINKS' })
-  if (isTestnet()) {
-    chainMenus.push({
-      title: 'EVM Explorer',
-      href: 'https://explorer.freedomstake.io',
-      icon: 'ServerIcon',
-    })
-  } else {
-    chainMenus.push({
-      title: 'EVM Explorer',
-      href: 'explorer.freedomstake.io',
-      icon: 'ServerIcon',
-    })
-  }
   chainMenus.push({
     title: 'Github',
     href: 'https://github.com/freedomstake',
