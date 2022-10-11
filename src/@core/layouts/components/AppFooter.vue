@@ -4,9 +4,9 @@
       Powered By
       <b-link
         class="ml-25 font-weight-bolder"
-        href="https://pointnetwork.io/"
+        href="https://freedomstake.io/"
         target="_blank"
-      >Point Network</b-link>
+      >Freedomstake</b-link>
     </span>
   </p>
 </template>
