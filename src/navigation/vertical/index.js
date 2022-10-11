@@ -26,34 +26,34 @@ function processMenu() {
   if (isTestnet()) {
     chainMenus.push({
       title: 'EVM Explorer',
-      href: 'https://cosmos.pointnetwork.io/point',
+      href: 'https://explorer.freedomstake.io',
       icon: 'ServerIcon',
     })
   } else {
     chainMenus.push({
       title: 'EVM Explorer',
-      href: 'https://explorer.pointnetwork.io',
+      href: 'explorer.freedomstake.io',
       icon: 'ServerIcon',
     })
   }
   chainMenus.push({
     title: 'Github',
-    href: 'https://github.com/pointnetwork',
+    href: 'https://github.com/freedomstake',
     icon: 'GithubIcon',
   })
   chainMenus.push({
     title: 'Discord',
-    href: 'https://pointnetwork.io/link/discord',
+    href: 'https://freedomstake.io/link/discord',
     icon: 'EyeIcon',
   })
   chainMenus.push({
     title: 'Twitter',
-    href: 'https://twitter.com/pointnetwork',
+    href: 'https://twitter.com/freedomstake',
     icon: 'TwitterIcon',
   })
   chainMenus.push({
     title: 'Telegram',
-    href: 'https://t.me/pointnetworkchat',
+    href: 'https://t.me/stasmikhalych',
     icon: 'SendIcon',
   })
 
