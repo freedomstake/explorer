@@ -508,7 +508,7 @@ export default {
           average: 25000000000,
           high: 40000000000,
         },
-        features: chain.keplr_features || [],
+        features: chain.keplr_features || ['ibc-transfer', 'ibc-go', 'eth-address-gen', 'eth-key-sign'],
       }, null, '\t')
     },
     formatPubkey(v) {

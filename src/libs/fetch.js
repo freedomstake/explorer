@@ -504,6 +504,7 @@ export default class ChainFetch {
     const conf = this.getSelectedConfig()
     const currency = getUserCurrency()
     if (conf.assets[0] && conf.assets[0].coingecko_id) {
+      // FIXME: get quotes from a web3 feed
       return ChainFetch.fetch(' https://api.coingecko.com', `/api/v3/coins/${coin || conf.assets[0].coingecko_id}/market_chart?vs_currency=${currency}&days=${days}`)
     }
     return null
@@ -512,6 +513,7 @@ export default class ChainFetch {
   async getCoinInfo(coin = 'point-network') {
     const conf = this.getSelectedConfig()
     if (conf.assets[0] && conf.assets[0].coingecko_id) {
+      // FIXME: get quotes from a web3 feed
       return ChainFetch.fetch(' https://api.coingecko.com', `/api/v3/coins/${coin || conf.assets[0].coingecko_id}`)
     }
     return null
@@ -519,6 +521,7 @@ export default class ChainFetch {
 
   // CoinMarketCap
   static async fetchCoinMarketCap(url) {
+    // FIXME: get quotes from a web3 feed
     const host = 'https://api.coingecko.com'
     return fetch(host + url).then(response => response.json())
   }

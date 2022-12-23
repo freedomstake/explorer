@@ -1,0 +1,7 @@
+{
+  "version": 0.1,
+  "target": "point_ping_pub.point",
+  "rootDir": "dist",
+  "keyvalue": {},
+  "contracts": []
+}

@@ -83,6 +83,7 @@ export default {
   },
   actions: {
     async getQuotes(context) {
+      // FIXME: get quotes from a web3 feed
       fetch('https://api.coingecko.com/api/v3/simple/price?ids=point-network&vs_currencies=usd&include_24hr_change=true').then(data => data.json()).then(data => {
         context.commit('setQuotes', data)
       })
